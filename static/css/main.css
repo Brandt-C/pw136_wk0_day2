@@ -1,0 +1,53 @@
+nav {
+background-color: aquamarine;
+padding-top: 15px;
+padding-bottom: 10px;
+border: 3px solid rgb(129, 129, 129);
+border-radius: 7px;
+}
+.nav-links {
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+    font-size: larger;
+}
+ul>li{
+    display: inline;
+    margin-left: 80px;
+    padding: 15px;
+}
+body {
+    background-color: antiquewhite;
+}
+header {
+    text-align: center;
+    color: rgb(99, 0, 0);
+}
+
+main {
+border-bottom: 1px solid darkgray;
+}
+article {
+    display: inline-block;
+    width: 65%;
+    border-right: 1px solid darkgray;
+    padding-bottom: 20px;
+
+}
+aside {
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+#copy {
+    font-size: xx-large;
+}
+
+ol>li>a {
+    text-decoration: none;
+}

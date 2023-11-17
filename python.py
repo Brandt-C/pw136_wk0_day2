@@ -293,9 +293,112 @@ while True:
 
 #side-bar for tomorrow/ truthy/falsy
 
+print('\nTruthy/falsey. . . ')
+# some things evaluate as True or False in python:
+# falsy examples:   ''    []     0   
+# truthy exp:        'anything'    ['anything']   1
+print(bool([234]))
 
 
 
+#Conditionals:
+#  if  <conditional>:
+    #codeblock to execute
+
+if 5 < 1:
+    print('duh')
+
+# chaining conditionals, but we can use 
+# elif <condtional>:
+#or
+# else:
+#The difference between using any number of ifs vs elif/else is that we're evaluating the same condition
+#which means that ONLY one of those codeblocks will fire
+
+age = 14
+height = 8763
+
+# if age < 18:
+#     print('kid')
+# if age >= 18:
+#     print('adult')
+# if age > 65:
+#     print('senior')
+
+if age < 18:
+    print('kid')
+elif age > 65:
+    print('senior')
+else:
+    print('adult')
+
+
+
+if age < 18:
+    print('kid')
+elif age > 17 and age < 65:
+    print('adult')
+else:
+    print('senior')
+
+# Truth-tree:
+# for and
+# T & T = T
+# T & F = F
+# F & F = F
+
+
+#for or
+# T or T = T
+# T or F = T
+# F or F =  F
+
+
+
+if age > 17 or height > 567:
+    print('at least they\'re tall!')
+
+
+#Functions
+# Because we don't want to type the same thing over and over
+# syntax -->    
+# def func_name(<parameter>, <another_parameter>):
+    #Codeblock to execute
+
+def add(num1, num2):
+    print(num1 + num2)
+
+
+add(5.0, 5)
+print(add(10, 10))
+
+def mult(a, b):
+    return a * b
+print(mult(10, 10))
+
+add(mult(10, 10), 50)
+# (mult(add(5, 5), 4))
+
+def namer(f_name):
+    print(f"HELLLLO {f_name.title()}")
+
+namer('parker')
+namer('mike')
+namer('jorge')
+
+# membership checks
+# in
+for letter in ';lkajsdf;lk':
+    if letter == 'j':
+        print(f"found {letter}")
+
+print('j' in 'lskdfj')
+n_list = [ 1, 2, 3, 4, 5, 6]
+print(5 in n_list)
+name_list = ['parker', 'mike', 'jorge']
+for name in name_list:
+    print(name.upper())
+    namer(name)
 
 
 
